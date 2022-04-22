@@ -1,0 +1,322 @@
+/* main background: #FFFFFF; */
+/* hero, footer background: #2F303A; */
+/* secondary background: #F5F4FA; */
+/* текст color: #757575; */
+/* текст color: #2196F3; */
+/* заголовки color: #212121 */
+
+html {
+    box-sizing: border-box;
+    *,
+    *::before;
+    *::after {
+        box-sizing: inherit;
+    }
+
+}
+:root {
+    --main-text-color: #757575;
+    --secondary-text-color: #2196F3;
+    --header-text-color: #212121;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+body {
+    background-color:#FFFFFF;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header, .container {
+    width: 1600px;
+    text-align: center;
+    outline: 2px solid tomato;
+}
+.text-web {
+    color: var(--secondary-text-color);
+}
+
+.text-studio {    
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: #000000;
+    display: inline-block;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+.head-nav, .head-cont, h1, h2, h3, p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.a-nav, .text-studio {
+    text-decoration: none;
+}
+.a-nav:hover{
+    color: var(--secondary-text-color);
+}
+.a-nav:focus {
+    color: var(--secondary-text-color);
+}
+.a-nav {
+    color: var(--header-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.a-nav.stud-act {
+    color: var(--secondary-text-color);
+}
+.a-head:hover {
+    color: var(--secondary-text-color);
+}
+.a-head:focus {
+    color: var(--secondary-text-color);
+}
+.a-head {
+    text-decoration: none;
+    color: var(--main-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+
+/* 1 секция Hero */
+
+.hero {
+    background:#2F303A;
+    color: #FFFFFF;
+}
+.hero-h {
+    padding-top: 200px;
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;    
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.button-hero {
+    display:inline-block;
+    margin-bottom: 200px;
+    padding: 10px 32px;    
+    min-width: 200px;   
+    border-radius: 4px;
+    background: var(--secondary-text-color);
+    color: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;       
+    align-items: center;    
+    letter-spacing: 0.06em;
+    
+}
+
+/* 2 секция */
+
+.hide {
+    display: none;
+}
+.benefits {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.benefits-h {
+    margin-bottom: 10px;
+    color: var(--header-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.benefits-p {
+    color: var(--main-text-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;    
+    letter-spacing: 0.03em;
+}
+
+/* 3 секция */
+
+.options {
+    margin-bottom: 50px;
+    color: var(--header-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.options-list {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 94px;
+}
+
+/* 4 секция */
+
+.section-four {
+    background: #F5F4FA;
+}
+.team {
+    padding-top: 94px;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.team-list {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 94px;
+}
+.member-pic {
+    margin-bottom: 30px;
+}
+.member {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;    
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.team, .member {
+    color: var(--header-text-color);
+}
+.section-four p {
+    color: var(--main-text-color);
+}
+.job {
+    padding-bottom: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;    
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+/* Footer */
+
+footer {
+    background: #2F303A;
+}
+.foot-web, .adress {    
+    color: #FFFFFF;
+}
+.foot-web {
+    display: inline-block;
+    padding-top: 60px;
+    margin-bottom: 20px;
+}
+.foot-web {
+    font-family: 'Raleway';    
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;    
+    letter-spacing: 0.03em;
+}
+.adress {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;    
+    letter-spacing: 0.03em;
+}
+.foot-cont, .foot-cont-tel {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;   
+    letter-spacing: 0.03em;
+}
+.foot-web {
+    text-decoration: none;;
+}
+.foot-list {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 60px;
+}
+.adress, .foot-cont, .foot-cont-tel {
+    text-decoration: none;
+}
+.adress {
+    margin-bottom: 9px;
+}
+.foot-cont {
+    margin-bottom: 9px;
+}
+
+
+/* Portfolio */
+
+.port-hide {
+    display: none;
+}
+.button-set {
+    margin-top: 0;
+    margin-bottom: 50px;
+    padding-top: 94px;
+}
+.a-nav.port-act {
+    color: var(--secondary-text-color);
+}
+.button-portfolio {
+    min-width: 73px;
+    padding: 6px 22px;
+    
+    border-radius: 4px;
+    background-color: #F5F4FA;
+    color: var(--header-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;    
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.button-portfolio:hover {
+    background-color: var(--secondary-text-color);
+    color: #FFFFFF;   
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.pic-set {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 94px;
+}
+.port-pic {
+    margin-bottom: 20px;
+}
+.port-filter-h {
+    margin-bottom: 4px;
+    color: var(--header-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;    
+    letter-spacing: 0.06em;
+}
+.port-filter-p {
+    padding-bottom: 20px;
+    color: var(--main-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;    
+    letter-spacing: 0.03em;
+}
