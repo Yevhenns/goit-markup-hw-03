@@ -7,13 +7,14 @@
 
 html {
     box-sizing: border-box;
-    *,
-    *::before;
-    *::after {
-        box-sizing: inherit;
-    }
-
 }
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
 :root {
     --main-text-color: #757575;
     --secondary-text-color: #2196F3;
@@ -24,16 +25,50 @@ ul {
     list-style: none;
     padding-left: 0;
 }
+
 body {
     background-color:#FFFFFF;
     font-family: 'Roboto', sans-serif;
 }
 
-.header, .container {
+.header, section, .foot {
     width: 1600px;
     text-align: center;
     outline: 2px solid tomato;
+    margin-left: auto;
+    margin-right: auto;
 }
+.container {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header .container {
+    display: flex;     
+}
+nav, .head-nav {
+    display: flex;
+    align-items: center;
+}
+.head-nav .item {
+    display: flex;    
+}
+.head-nav .item + .item {
+    margin-left: 50px;
+}
+.head-cont {
+    display: flex;
+    align-items: center;
+}
+.head-cont {
+    display: flex;
+    margin-left: auto;    
+}
+.head-cont .item + .item {
+    margin-left: 50px;
+}
+
 .text-web {
     color: var(--secondary-text-color);
 }
@@ -48,6 +83,7 @@ body {
     display: inline-block;
     padding-top: 24px;
     padding-bottom: 25px;
+    margin-right: 93px;    
 }
 .head-nav, .head-cont, h1, h2, h3, p {
     margin-top: 0;
@@ -92,7 +128,7 @@ body {
 
 .hero {
     background:#2F303A;
-    color: #FFFFFF;
+    color: #FFFFFF;    
 }
 .hero-h {
     padding-top: 200px;
@@ -100,9 +136,11 @@ body {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;    
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    max-width: 696px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .button-hero {
     display:inline-block;
@@ -131,6 +169,9 @@ body {
     margin-bottom: 0;
     padding-top: 94px;
     padding-bottom: 94px;
+    display: flex;
+    align-items: center;
+    margin-left: -30px;
 }
 .benefits-h {
     margin-bottom: 10px;
@@ -139,7 +180,7 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
-    text-transform: uppercase;
+    text-transform: uppercase;    
 }
 .benefits-p {
     color: var(--main-text-color);
@@ -148,6 +189,12 @@ body {
     line-height: 1.71;    
     letter-spacing: 0.03em;
 }
+.benefits .item {       
+    flex-basis: calc(100% / 4 - 30px);
+    text-align: left;
+    margin-left: 30px;
+}
+
 
 /* 3 секция */
 
@@ -164,6 +211,13 @@ body {
     margin-top: 0px;
     margin-bottom: 0px;
     padding-bottom: 94px;
+    display: flex;
+    margin-left: -30px;
+}
+.options-list .item {
+    display: flex;
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
 }
 
 /* 4 секция */
@@ -184,6 +238,21 @@ body {
     margin-top: 0;
     margin-bottom: 0;
     padding-bottom: 94px;
+    display: flex;
+    margin-left: -30px;
+}
+.team-list .card {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    width: 270px;
+    display: flex;
+}
+.team-list .card {
+    flex-basis: calc(100% / 4 - 30px);
+    margin-left: 30px;
 }
 .member-pic {
     margin-bottom: 30px;
@@ -260,6 +329,9 @@ footer {
 }
 .foot-cont {
     margin-bottom: 9px;
+}
+.foot .container {
+    text-align: left;
 }
 
 
