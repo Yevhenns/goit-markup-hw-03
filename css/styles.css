@@ -241,14 +241,16 @@ nav, .head-nav {
     display: flex;
     margin-left: -30px;
 }
+.team-list .item {
+    display: flex;
+}
 .team-list .card {
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    width: 270px;
-    display: flex;
+    width: 270px;   
 }
 .team-list .card {
     flex-basis: calc(100% / 4 - 30px);
@@ -344,6 +346,13 @@ footer {
     margin-top: 0;
     margin-bottom: 50px;
     padding-top: 94px;
+    display: inline-block;    
+}
+.button-set .item {
+    display: inline-block;
+}
+.button-set .item + item {
+    margin-left: 8px;
 }
 .a-nav.port-act {
     color: var(--secondary-text-color);
@@ -360,6 +369,7 @@ footer {
     line-height: 1.62;    
     text-align: center;
     letter-spacing: 0.03em;
+    border: none;
 }
 .button-portfolio:hover {
     background-color: var(--secondary-text-color);
@@ -368,10 +378,14 @@ footer {
     0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+
+/* pictures */
+
 .pic-set {
     margin-top: 0;
     margin-bottom: 0;
     padding-bottom: 94px;
+    display: flex;   
 }
 .port-pic {
     margin-bottom: 20px;
@@ -391,4 +405,13 @@ footer {
     font-size: 16px;
     line-height: 1.88;    
     letter-spacing: 0.03em;
+}
+.pic-set .item {
+    display: flex;   
+}
+.pic-set .item div {
+    width: 370px;
+    height: 404px;
+    background: #EEEEEE;
+    flex-basis: calc(100% / 2 - 30px);
 }
