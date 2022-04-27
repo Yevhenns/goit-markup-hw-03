@@ -34,7 +34,6 @@ body {
 .header, section, .foot {
     width: 1600px;
     text-align: center;
-    outline: 2px solid tomato;
     margin-left: auto;
     margin-right: auto;
 }
@@ -390,8 +389,7 @@ footer {
     flex-wrap: wrap;
 }
 .port-pic {
-    margin-bottom: 20px;
-    
+    margin-bottom: 20px;    
 }
 .port-filter-h {
     margin-bottom: 4px;
@@ -409,7 +407,6 @@ footer {
     line-height: 1.88;    
     letter-spacing: 0.03em;
 }
-
 .pic-set > .item {
     width: 370px;
     height: 404px;       
