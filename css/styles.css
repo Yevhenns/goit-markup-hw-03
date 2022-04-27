@@ -385,10 +385,13 @@ footer {
     margin-top: 0;
     margin-bottom: 0;
     padding-bottom: 94px;
-    display: flex;   
+    display: flex;
+    margin-left: -30px;   
+    flex-wrap: wrap;
 }
 .port-pic {
     margin-bottom: 20px;
+    
 }
 .port-filter-h {
     margin-bottom: 4px;
@@ -406,12 +409,13 @@ footer {
     line-height: 1.88;    
     letter-spacing: 0.03em;
 }
-.pic-set .item {
-    display: flex;   
-}
-.pic-set .item div {
+
+.pic-set > .item {
     width: 370px;
-    height: 404px;
-    background: #EEEEEE;
-    flex-basis: calc(100% / 2 - 30px);
+    height: 404px;       
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+    margin-left: 30px;
+    margin-top: 30px;
 }
