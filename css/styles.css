@@ -286,6 +286,7 @@ nav, .head-nav {
 footer {
     background: #2F303A;
 }
+
 .foot-web, .adress {    
     color: #FFFFFF;
 }
@@ -306,6 +307,7 @@ footer {
     font-size: 14px;
     line-height: 1.71;    
     letter-spacing: 0.03em;
+    font-style: normal;
 }
 .foot-cont, .foot-cont-tel {
     color: rgba(255, 255, 255, 0.6);
@@ -313,6 +315,7 @@ footer {
     font-size: 14px;
     line-height: 1.71;   
     letter-spacing: 0.03em;
+    font-style: normal;
 }
 .foot-web {
     text-decoration: none;;
