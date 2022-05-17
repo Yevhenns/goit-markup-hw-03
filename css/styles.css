@@ -103,6 +103,7 @@ ul {
 }
 .header-pages {
     display: flex;
+    margin-left: 93px;
 }
 .header-pages .item:not(:last-child) {
     margin-right: 50px;
@@ -123,9 +124,6 @@ ul {
 .header-container, .nav,
 .logo-link {
     display: flex;
-}
-.logo-link {
-    margin-right: 93px;
 }
 .header-container, .nav {
     align-items: center;
@@ -189,7 +187,7 @@ ul {
     display: flex;
 }
 .benefits-list .item {
-    width: 270px;
+    flex-basis: 270px;    
 }
 .benefits-list .item + .item {
     margin-left: 30px;
@@ -207,6 +205,9 @@ ul {
 }
 .examples-photo {
     display: block;
+}
+.examples-list .item {
+    flex-basis: 370px;
 }
 /* 3 секция */
 
@@ -245,6 +246,7 @@ ul {
     0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    flex-basis: 270px;
 }
 /* 4 секция */
 
@@ -325,15 +327,11 @@ address {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    margin-bottom: 4px;
-    padding-left: 24px;
-    padding-top: 20px;
+    margin-bottom: 4px;   
 }
 .service-description {
     font-size: 16px;
-    line-height: 1.88;
-    padding-bottom: 20px;
-    padding-left: 24px;
+    line-height: 1.88;    
 }
 .service-list {
     display: flex;
@@ -342,10 +340,11 @@ address {
 .service-list .item {    
     margin-right: 30px;
     margin-bottom: 30px;
-    width: 370px;
+    flex-basis: 370px;
 }
 .border-card {
     border: 1px solid var(--bordfer-color);
+    padding: 20px 24px;  
 }
 .service-list .item:nth-child(3n + 3) {
     margin-right: 0;
